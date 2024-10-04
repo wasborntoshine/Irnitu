@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О клубе</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Плавная прокрутка */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-section">
+        <div class="header-overlay">
+            <h1>Молодежный казачий клуб им.Якова Похабова</h1>
+            <p>Сила. Дружба. Молодежь!</p>
+        </div>
+        <!-- Меню разделов -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#leader">Руководитель</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#achievements">Мероприятия</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <!-- О нас -->
+            <article class="col-lg-6 col-md-12 mb-4" id="about-us">
+                <div class="card h-100 shadow">
+                    <img src="aboutus.jpg" class="card-img-top" alt="О нас">
+                    <div class="card-body">
+                        <h2 class="card-title">О нас</h2>
+                        <p class="card-text">Наш клуб был основан в 2022 году. Занимаемся привлечением молодежи, охраняем социально важные объекты, путешествуем в коммандировках.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Руководитель -->
+            <article class="col-lg-6 col-md-12 mb-4" id="leader">
+                <div class="card h-100 shadow">
+                    <img src="Danil.jpg" class="card-img-top" alt="Руководитель">
+                    <div class="card-body">
+                        <h2 class="card-title">Руководитель</h2>
+                        <p class="card-text"><strong>Дудин Даниил</strong> – руководитель клуба с 2023 года. Под его руководством клуб значительно прибавил в численности.</p>
+                        <blockquote class="blockquote mt-3">
+                            <p>"Казачество — это не работа, это семья!"</p>
+                            <footer class="blockquote-footer">Дудин Даниил</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Мероприятия -->
+        <section class="my-5" id="achievements">
+            <h2 class="text-center">Мероприятия</h2>
+            <div class="row">
+                <article class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="ach1.jpg" class="card-img-top" alt="Мероприятие 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Форум казачьей молодежи г. Пятигорск</h3>
+                            <p class="card-text">В Пятигорске проходит Пятый Всероссийский слет казачьей молодежи. Представители клуба участвуют в различных сессиях и получают новые знания.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="ach2.jpg" class="card-img-top" alt="Мероприятие 2">
+                        <div class="card-body">
+                            <h3 class="card-title">Военно-полевой выход совместно с СОБР</h3>
+                            <p class="card-text">Ребята изучали тактику ведения боя и полевую медицину, а также теоретический курс о БПЛА.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="ach3.jpg" class="card-img-top" alt="Мероприятие 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Охрана общественного порядка</h3>
+                            <p class="card-text">Казаки нашего клуба обеспечивали безопасность во время праздничных мероприятий на День Победы.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Молодежный казачий клуб им. Якова Похабова. Все права защищены.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

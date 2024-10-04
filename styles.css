@@ -1,0 +1,168 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2c2f33; /* Темный фон */
+    color: #0b0404; /* Белый цвет текста для контраста */
+    margin: 0;
+    padding: 0;
+}
+/* Стиль компактного меню */
+nav.navbar {
+    background-color: transparent !important; /* Прозрачный фон */
+    padding: 0 !important; /* Убираем лишние отступы */
+    box-shadow: none !important; /* Убираем тени */
+    border: none !important; /* Убираем рамки */
+}
+
+.navbar .nav-link {
+    color: #000000 !important; /* Черный текст */
+    font-size: 1rem !important; /* Компактный размер шрифта */
+    margin: 0 10px !important; /* Расстояние между пунктами меню */
+    transition: color 0.3s ease !important;
+}
+
+.navbar .nav-link:hover {
+    color: #007bff !important; /* Синий цвет при наведении */
+}
+
+.navbar-brand {
+    color: #000000 !important; /* Черный цвет для логотипа */
+    font-size: 1.2rem !important; /* Компактный размер логотипа */
+    font-weight: bold !important;
+    padding: 0 !important; /* Убираем отступы */
+}
+
+.navbar-toggler-icon {
+    background-color: #000000 !important; /* Черная иконка для раскрытия меню */
+}
+
+.navbar-toggler {
+    border: none !important; /* Убираем рамку */
+    padding: 0 !important; /* Убираем отступы */
+}
+/* Заголовок и меню */
+.header-section {
+    background-image: url('rus.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px 0;
+    width: 100%;
+}
+
+.header-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-section p {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav.navbar {
+    margin-top: -10px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Разделы и карточки */
+section.container {
+    padding: 3rem 0;
+}
+
+.card {
+    border-radius: 15px;
+    border: 2px solid #3279d5; /* Пастельный синий цвет для обводки */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    background-color: #a39f9f; /* Белый фон карточек */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень для объёма */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Подъём карточки при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более сильная тень при наведении */
+    border: 2px solid #2505f6; /* Более насыщенный цвет обводки при наведении */
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 5px solid #f8f9fa;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #251f44;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Футер */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .header-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-section p {
+        font-size: 1.2rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Стиль для печати */
+@media print {
+    header, nav, footer {
+        display: none;
+    }
+}
